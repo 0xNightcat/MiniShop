@@ -1,0 +1,41 @@
+.shop-products {
+  margin-top: 3rem;
+  .top-row {
+    label {
+      font-size: 14.5px;
+      margin-bottom: 9px;
+    }
+    .search {
+      position: relative;
+      input {
+        height: 45px;
+        padding-right: 40px;
+        border: 1px solid #dfc0df;
+        &:focus {
+          border-color: purple;
+          box-shadow: none;
+        }
+      }
+      i {
+        position: absolute;
+        right: 15px;
+        top: 58%;
+      }
+    }
+    .sort {
+      .sort-by {
+        select {
+          height: 45px;
+          width: 93%;
+          border: 1px solid #dfc0df;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  .pros-row {
+    margin-top: 4rem;
+  }
+}

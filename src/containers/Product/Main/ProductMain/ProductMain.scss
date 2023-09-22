@@ -1,0 +1,38 @@
+.product-info {
+   text-align: right;
+   .stars {
+      margin-top: 10px;
+      i {
+         margin-left: 4px;
+         color: #fca80c;
+         font-size: 17px;
+      }
+   }
+   .price-cat {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.5rem;
+      .price {
+         font-size: 17px;
+         span {
+            font-weight: bold;
+         }
+      }
+      .category {
+         font-size: 13px;
+         color: #363636;
+      }
+   }
+   .desc {
+      font-family: 'iranyekan_light';
+      color: #000;
+      line-height: 1.9;
+      font-size: 14px;
+      margin-top: 0.2rem;
+   }
+   .pro-btn {
+      margin-top: 0.6rem;
+      border-radius: 5px !important;
+      margin-left: 10px;
+   }
+}

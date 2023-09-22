@@ -1,0 +1,117 @@
+.footer {
+   background-color: #f3f3f3;
+   padding: 20px 10px 22px;
+   margin-top: 5rem;
+   text-align: center;
+   border-top-right-radius: 50px;
+   border-top-left-radius: 50px;
+   border: 1px dashed #888888;
+   .footer-top {
+      border-bottom: 1px solid #cfcfcf;
+      margin-bottom: 20px;
+      padding: 0 30px;
+      .row {
+         justify-content: space-between;
+      }
+      .footer-right {
+         display: flex;
+         align-items: center;
+         img {
+            width: 60px;
+            margin-bottom: 18px;
+         }
+         h4 {
+            font-family: 'iranyekan_bold';
+            margin-right: 10px;
+         }
+      }
+      .footer-social {
+         display: flex;
+         justify-content: end;
+         ul {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            padding-right: 23px;
+            margin-bottom: 0;
+            li {
+               margin-left: 23px;
+               &:nth-child(4) {
+                  margin-left: 0;
+               }
+               a {
+                  font-size: 30px;
+                  i{
+                     &.fa-telegram {
+                        color: #0c7ec0;
+                     }
+                     &.fa-instagram {
+                        color: #c00c8a;
+                     }
+                     &.fa-twitter {
+                        color: #0557f0;
+                     }
+                     &.fa-youtube-play {
+                        color: #c00c33;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   .bottom-row {
+      justify-content: space-around;
+      border-bottom: 1px solid #cfcfcf;
+      padding: 10px;
+      .info {
+         p {
+            line-height: 2.2;
+            font-family: 'iranyekan_light';
+            color: #000;
+            text-align: justify;
+         }
+      }
+      ul {
+         text-align: right;
+         list-style: circle !important;
+         li {
+            margin-top: 15px;
+            a {
+               font-size: 14.5px;
+               transition: 0.3s;
+            }
+            &:hover {
+               a {
+                  padding-right: 3px;
+               }
+            }
+         }
+      }
+      .nemad {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         img {
+            width: 100px;
+            margin-top: 10px;
+         }
+      }
+      .brand {
+         img {
+            width: 130px;
+         }
+      }
+   }
+   .last-row {
+      padding-top: 20px;
+      text-align: right;
+      p {
+         margin-bottom: 0;
+         font-size: 13.5px;
+         font-family: 'iranyekan_light';
+         color: #000;
+      }
+   }
+}

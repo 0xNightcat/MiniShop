@@ -1,0 +1,85 @@
+.nav-icons {
+   display: flex;
+   align-items: center;
+   .item {
+      margin-left: 15px;
+   }
+   .dropdown {
+      .dropdown-toggle {
+         a {
+            font-size: 21px;
+         }
+         &.dropdown-toggle::after {
+            display: none;
+         }
+      }
+   }
+   .cart {
+      .dropdown-menu {
+         width: 330px;
+         padding: 6px 15px;
+         right: 0;
+         .cart-box {
+            .cart-box-item {
+               display: flex !important;
+               justify-content: space-between;
+               align-items: center;
+               border-bottom: 1px solid gray;
+               .cart-image {
+                  img {
+                     width: 80px;
+                  }
+                  .cart-title {
+                     font-size: 13px;
+                  }
+               }
+               .cart-number {
+                  font-size: 18px;
+                  font-weight: bold;
+                  display: flex;
+                  align-items: center;
+                  .line {
+                     margin: 0 5px;
+                  }
+                  span {
+                     vertical-align: middle;
+                  }
+                  a {
+                     display: block;
+                     text-align: center;
+                     width: 30px;
+                     height: 30px;
+                     border-radius: 50%;
+                     background-color: #505050;
+                     color: #fff !important;
+                  }
+               }
+               .cart-remove {
+                  .btn-remove {
+                     font-size: 11px !important;
+                     font-weight: bold;
+                     border: 1px solid red !important;
+                     background-color: #fff;
+                     color: red;
+                  }
+               }
+            }
+            .cart-box-bottom {
+               margin-top: 4px;
+               .btn {
+                  width: 48%;
+                  border-radius: 0 !important;
+                  font-size: 13px !important;
+                  &.btn-clear {
+                     margin-left: 3px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.dropdown-menu {
+   text-align: right;
+}

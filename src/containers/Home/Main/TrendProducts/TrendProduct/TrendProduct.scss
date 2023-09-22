@@ -1,0 +1,32 @@
+.card {
+   border-radius: none !important;
+   border: none !important;
+   // box-shadow: 1px 3px 6px 0px #c2c2c2;
+   border-right: 1px solid #c5c5c5 !important;
+   padding-right: 27px;
+   img {
+      width: 200px;
+   }
+   .card-title {
+      font-weight: bold;
+      font-size: 18px;
+   }
+   .card-body {
+      margin-top: 10px;
+      text-align: right;
+      .category {
+         span {
+            text-align: left !important;
+            display: block;
+            color: gray;
+            font-size: 13px;
+         }
+      }
+      .price {
+         font-size: 15px;
+         span {
+            color: gray;
+         }
+      }
+   }
+}

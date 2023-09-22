@@ -1,0 +1,13 @@
+@import '../styles/variable.scss';
+
+.header {
+   .header-item {
+      justify-content: center;
+   }
+   .header-show {
+      img {
+         height: 210px;
+         width: 100%;
+      }
+   }
+}

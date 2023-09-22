@@ -1,0 +1,33 @@
+@font-face {
+   font-family: 'iranyekan';
+   src: url('../public/fonts/IRANYekanRegular.ttf');
+}
+
+@font-face {
+   font-family: 'iranyekan_bold';
+   src: url('../public/fonts/IRANYekanBold.ttf');
+}
+
+@font-face {
+   font-family: 'iranyekan_light';
+   src: url('../public/fonts/IRANYekanLight.ttf');
+}
+
+* {
+   font-family: 'iranyekan';
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   direction: rtl;
+}
+
+a {
+   text-decoration: none !important;
+   color: #000 !important;
+}
+
+ul {
+   list-style: none !important;
+}

@@ -1,0 +1,19 @@
+.header-full-image {
+  height: auto;
+  margin-top: 3.7rem;
+  .back-image {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-right: 6rem;
+    height: 270px;
+    width: 100%;
+    background-image: url('../../../assets//images/Header-background-2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h3 {
+      color: #fff;
+     text-shadow: 1px 1px 3px #000;
+    }
+  }
+}

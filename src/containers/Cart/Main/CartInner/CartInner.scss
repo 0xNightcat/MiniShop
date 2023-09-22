@@ -1,0 +1,48 @@
+.cart-in {
+   margin-top: 3rem;
+   .table {
+      tbody {
+         tr {
+            vertical-align: middle;
+            td {
+               img {
+                  width: 110px;
+               }
+            }
+         }
+      }
+   }
+   .cart-info {
+      .card {
+         padding: 11px 5px;
+         .card-body {
+            padding: 10px;
+            .total {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               font-size: 14.5px;
+               border-bottom: 1px solid #dbdbdb;
+               padding-bottom: 12px;
+               .t-price {
+                  font-weight: bold;
+               }
+            }
+            .describe {
+               margin-top: 18px;
+               font-size: 13px;
+               text-align: right;
+               line-height: 1.7;
+               font-family: 'iranyekan_light';
+               color: #000;
+            }
+            .btns {
+               margin-top: 3rem;
+               button {
+                  font-size: 13.5px !important;
+               }
+            }
+         }
+      }
+   }
+}

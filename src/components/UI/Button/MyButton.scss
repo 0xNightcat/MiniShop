@@ -1,0 +1,32 @@
+button {
+   color: #fff;
+   outline: none;
+   border: none;
+   border-radius: 10px !important;
+   padding: 10px;
+   font-size: 14px !important;
+   &.block {
+      display: block;
+      width: 100%;
+   }
+   &.add {
+      background-color: #9e019e;
+   }
+   &.remove {
+      background-color: #363636;
+   }
+   &.show {
+      background-color: #013cac;
+   }
+   &.shop-add {
+      background-color: #fff;
+      border: 1px solid #9e019e;
+      color: #9e019e;
+      transition: 0.2s;
+      &:hover {
+         background-color: #9e019e09;
+      }
+   }
+}
+
+

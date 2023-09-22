@@ -1,0 +1,65 @@
+{
+  "products": [
+    {
+      "name": "هدفون مدل Tesco",
+      "id": 1,
+      "image": "./src/assets/images/products/1.png",
+      "price": 21000,
+      "count": 2,
+      "category": "tech",
+      "date": 1402.6,
+      "sale_count": 7
+    },
+    {
+      "name": "لپتاپ Asus N552",
+      "id": 2,
+      "image": "../../../../../assets/images/products/2.png",
+      "price": 22000,
+      "count": 2,
+      "category": "tech",
+      "date": 1402.5,
+      "sale_count": 3
+    },
+    {
+      "name": "کنسول بازی XBOX",
+      "id": 3,
+      "image": "../../../../../assets/images/products/3.png",
+      "price": 23000,
+      "count": 2,
+      "category": "tech",
+      "date": 1402.4,
+      "sale_count": 2
+    },
+    {
+      "name": "کفش روزمره Adidas",
+      "id": 4,
+      "image": "../../../../../assets/images/products/4.png",
+      "price": 24000,
+      "count": 2,
+      "category": "tech",
+      "date": 1402.3,
+      "sale_count": 5
+    },
+    {
+      "name": "هدفون مدل Razer",
+      "id": 5,
+      "image": "../../../../../assets/images/products/5.png",
+      "price": 25000,
+      "count": 2,
+      "category": "tech",
+      "date": 1402.2,
+      "sale_count": 0
+    },
+    {
+      "name": "گوشی Apple Iphone 13",
+      "id": 6,
+      "image": "../../../../../assets/images/products/6.png",
+      "price": 26000,
+      "count": 2,
+      "category": "tech",
+      "date": 1402.1,
+      "sale_count": 6
+    }
+  ],
+  "newsletter_users": []
+}

@@ -1,0 +1,13 @@
+.cart-main {
+   margin-top: 3rem;
+   .container {
+      .breadcrumb {
+         justify-content: end;
+         padding-bottom: 16px;
+         border-bottom: 1px solid #dfdfdf;
+         .breadcrumb-item {
+            font-size: 14px;
+         }
+      }
+   }
+}

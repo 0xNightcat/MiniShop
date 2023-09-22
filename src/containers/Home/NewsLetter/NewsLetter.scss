@@ -1,0 +1,41 @@
+.newsletter {
+   margin-top: 4.5rem;
+   h4 {
+      font-family: 'iranyekan_bold';
+      text-align: center;
+   }
+   .newsletter-inner {
+      border: 2px dotted #4c1f5fd8;
+      border-radius: 20px;
+      margin-top: 1.9rem;
+      text-align: center;
+      .row {
+         justify-content: space-around;
+         align-items: center;
+         img {
+            width: 270px;
+         }
+         form {
+            div {
+               display: flex;
+               input {
+                  width: 400px;
+                  height: 50px;
+                  border-radius: 10px;
+                  border: none;
+                  border: 1px solid #8000806c;
+                  &:focus {
+                     outline: none;
+                     box-shadow: none;
+                  }
+               }
+               button {
+                  border-radius: 10px;
+                  width: 80px;
+                  margin-right: 7px;
+               }
+            }
+         }
+      }
+   }
+}
