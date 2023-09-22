@@ -61,5 +61,22 @@
       "sale_count": 6
     }
   ],
-  "newsletter_users": []
+  "newsletter_users": [
+    {
+      "gmail": "test@gmail.com",
+      "id": 1
+    },
+    {
+      "gmail": "test@gmail.com",
+      "id": 2
+    },
+    {
+      "gmail": "test@gmail.com",
+      "id": 3
+    },
+    {
+      "gmail": "test222@gmail.com",
+      "id": 4
+    }
+  ]
 }
