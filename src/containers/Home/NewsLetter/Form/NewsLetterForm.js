@@ -1,11 +1,22 @@
+import './NewsLetterForm.scss';
+import Alert from '../../../../components/UI/Alert/Alert';
+import Wrapper from '../../../../hoc/Wrapper';
 import { Form, Button } from 'react-bootstrap';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
+import { showAlert } from '../../../../action/homeAction';
+import { hideAlert } from '../../../../action/homeAction';
 
 // newsletter component
 function NewsLetterForm() {
 
-   const NewsLetterHandler = async (event) => {
-      const inputValue = event.target.previousElementSibling.value;
+   const dispatch = useDispatch();
+
+   const alertState = useSelector((state) => state.home);
+   const { alertShow } = alertState;
+
+   const NewsLetterHandler = (event) => {
+      
+      const inputValue = event.target.previousElementSibling.previousElementSibling.value;
       const emailPattern = /^[a-zA-z1-9\.\-\_]+@(gmail.com)$/;
       
       const data = {
@@ -13,19 +24,33 @@ function NewsLetterForm() {
       }            
       
       if(inputValue.match(emailPattern)) {
-         await axios.post('http://localhost:7000/newsletter_users', data);
+         dispatch(showAlert(data));
+         document.querySelector('.input-error').style.display = 'none';
+      } else {
+         document.querySelector('.input-error').style.display = 'block';
       }
 
-      event.target.previousElementSibling.value = '';
+      event.target.previousElementSibling.previousElementSibling.value = '';
+   }
+
+   // close alert handler
+   const handleClose =() => {
+      dispatch(hideAlert());
    }
 
   return (
-   <Form>
-      <Form.Group>
-         <Form.Control type='text' placeholder='ایمیل' />
-         <Button className='btn btn-warning' onClick={(event) => NewsLetterHandler(event)}>ثبت</Button>
-      </Form.Group>
-   </Form>
+   <Wrapper>
+      <Alert show={alertShow} hide={handleClose} />
+      <Form>
+         <Form.Group className='form-group'>
+            <Form.Control type='text' placeholder='ایمیل' />
+            <span className='input-error'>
+               ایمیل وارد شده اشتباه می باشد
+            </span>
+            <Button className='btn btn-warning' onClick={(event) => NewsLetterHandler(event)}>ثبت</Button>
+         </Form.Group>
+      </Form>
+   </Wrapper>
   )
 }
 

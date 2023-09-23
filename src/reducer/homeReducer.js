@@ -1,5 +1,6 @@
 const initialState = {
-   products: []
+   products: [],
+   alertShow: false,
 }
 
 // home reducer (state handler)
@@ -10,6 +11,17 @@ export const homeReducer = (state = initialState, action) => {
             ...state,
             products: action.payload
          }
+      case 'SHOW_ALERT':
+         return {
+            ...state,
+            alertShow: true,
+      }
+      case 'HIDE_ALERT':
+         return {
+            ...state,
+            alertShow: false,
+      }
+      
       default:
          return state;
    }
