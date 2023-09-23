@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// home actions
-export const homeAction = () => async (dispatch) => {
+// get products action
+export const getProducts = () => async (dispatch) => {
    const { data } = await axios.get('http://localhost:7000/products');
 
    dispatch({
@@ -10,7 +10,7 @@ export const homeAction = () => async (dispatch) => {
    })
 }
 
-// home actions
+// show alert action
 export const showAlert = (datas) => async (dispatch) => {
    await axios.post('http://localhost:7000/newsletter_users', datas)
       .then((response) => {
@@ -22,7 +22,7 @@ export const showAlert = (datas) => async (dispatch) => {
       })
 } 
 
-// home actions
+// hide alert action
 export const hideAlert = () => async (dispatch) => {
    dispatch({
       type: 'HIDE_ALERT',

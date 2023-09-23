@@ -2,10 +2,10 @@ import './TrendProducts.scss';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
-import { homeAction } from '../../../../action/homeAction';
-
+import { getProducts } from '../../../../action/homeAction';
 import TrendProduct from './TrendProduct/TrendProduct';
 
+// trend products component
 function TrendProducts() {
   const dispatch = useDispatch();
   
@@ -14,7 +14,7 @@ function TrendProducts() {
   const { products } = home;
 
   useEffect(() => {
-    dispatch(homeAction());
+    dispatch(getProducts());
   }, [])
 
   // sort products by more sale

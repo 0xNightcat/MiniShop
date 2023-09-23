@@ -1,3 +1,6 @@
+// reducer
+
+// initial state
 const initialState = {
    products: [],
    alertShow: false,

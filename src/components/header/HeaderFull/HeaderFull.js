@@ -1,9 +1,7 @@
-import React from 'react';
-
 import './HeaderFull.scss';
-
 import Wrapper from '../../../hoc/Wrapper';
 
+// header full component
 function HeaderFull() {
   return (
     <Wrapper class='header-full-image'>

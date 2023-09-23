@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import Wrapper from '../../../hoc/Wrapper';
-
 import './TopSales.scss';
+import Wrapper from '../../../hoc/Wrapper';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
+// images
 import image from '../../../assets/images/small_pros.jpg';
 
+// top sales component
 function TopSales() {
   return (
     <Wrapper class='top_sales mt-5'>

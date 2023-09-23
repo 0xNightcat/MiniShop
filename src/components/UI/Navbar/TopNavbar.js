@@ -1,13 +1,12 @@
-import React from 'react';
+import './TopNavbar.scss';
 import { Navbar, Nav, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
-import './TopNavbar.scss';
-
-import logo from '../../../assets/images/logo/logo.png';
-
 import NavbarIcons from './NavbarIcons/NavbarIcons';
 
+// images
+import logo from '../../../assets/images/logo/logo.png';
+
+// top navbar component
 function TopNavbar() {
    window.addEventListener('wheel', () => {
       const navbar = document.querySelector('.navbar');

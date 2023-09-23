@@ -1,15 +1,14 @@
-import React from 'react';
+import './CartInner.scss';
+import Wrapper from '../../../../hoc/Wrapper';
 import { Container, Row, Col, Image, Table, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import './CartInner.scss';
-
-import Wrapper from '../../../../hoc/Wrapper';
-
+// images
 import image1 from '../../../../assets/images/products/2.png';
 import image2 from '../../../../assets/images/products/3.png';
 import image3 from '../../../../assets/images/products/4.png';
 
+// cart content component
 function CartInner() {
   return (
     <Wrapper class='cart-in'>

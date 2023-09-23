@@ -7,6 +7,7 @@ import Cart from './containers/Cart/Cart';
 import Checkout from './containers/Checkout/Checkout';
 import Product from './containers/Product/Product';
 
+// app component (main)
 function App() {
   return (
     <div>

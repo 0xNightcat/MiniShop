@@ -1,5 +1,4 @@
 import Wrapper from '../../hoc/Wrapper';
-
 import Header from '../header/Header';
 import HeaderSlide from '../../containers/Home/HeaderSlide/HeaderSlide';
 import TopSales from '../../containers/Home/TopSales/TopSales';

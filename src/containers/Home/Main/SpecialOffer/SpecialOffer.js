@@ -1,10 +1,10 @@
-import React from 'react';
+import './SpecialOffer.scss';
 import { Image } from 'react-bootstrap';
 
+// images
 import offerImage from '../../../../assets/images/offer.jpg';
 
-import './SpecialOffer.scss';
-
+// special offer component
 function SpecialOffer() {
   return (
     <section className='special_offer'>

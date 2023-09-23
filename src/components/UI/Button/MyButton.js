@@ -1,7 +1,6 @@
-import React from 'react';
-
 import './MyButton.scss';
 
+// custom button component
 function MyButton(props) {
   return (
     <button

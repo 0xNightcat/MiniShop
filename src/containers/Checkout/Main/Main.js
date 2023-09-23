@@ -1,10 +1,8 @@
-import React from 'react';
+import './Main.scss';
+import Wrapper from '../../../hoc/Wrapper';
 import { Container } from 'react-bootstrap';
 
-import './Main.scss';
-
-import Wrapper from '../../../hoc/Wrapper';
-
+// checkout main component
 function Main() {
   return (
     <Wrapper class='checkout-main text-center'>

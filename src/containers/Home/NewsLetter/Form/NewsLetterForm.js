@@ -1,19 +1,19 @@
 import './NewsLetterForm.scss';
-import Alert from '../../../../components/UI/Alert/Alert';
 import Wrapper from '../../../../hoc/Wrapper';
+import Alert from '../../../../components/UI/Alert/Alert';
 import { Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { showAlert } from '../../../../action/homeAction';
 import { hideAlert } from '../../../../action/homeAction';
 
-// newsletter component
+// newsletter form component
 function NewsLetterForm() {
-
+   
    const dispatch = useDispatch();
-
    const alertState = useSelector((state) => state.home);
    const { alertShow } = alertState;
 
+   // newsletter handler
    const NewsLetterHandler = (event) => {
       
       const inputValue = event.target.previousElementSibling.previousElementSibling.value;

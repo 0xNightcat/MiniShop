@@ -1,12 +1,10 @@
-import React from 'react';
+import './Main.scss';
+import Wrapper from '../../../hoc/Wrapper';
 import { Container, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
-import './Main.scss';
-
-import Wrapper from '../../../hoc/Wrapper';
 import Products from './Products/Products';
 
+// shop main component
 function Main() {
   return (
     <Wrapper class='shop-main'>

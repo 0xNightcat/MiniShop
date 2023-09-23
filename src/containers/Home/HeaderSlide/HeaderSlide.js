@@ -1,10 +1,8 @@
-import React from 'react';
+import './HeaderSlide.scss';
+import Wrapper from '../../../hoc/Wrapper';
 import { Image } from 'react-bootstrap';
 
-import './HeaderSlide.scss';
-
-import Wrapper from '../../../hoc/Wrapper';
-
+// header slide component
 function HeaderSlide({ headSlider, className }) {
   return (
     <Wrapper class='header_slide'>

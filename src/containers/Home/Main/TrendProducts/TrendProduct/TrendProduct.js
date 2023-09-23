@@ -3,11 +3,8 @@ import { Col, Card, Row } from 'react-bootstrap';
 
 import MyButton from '../../../../../components/UI/Button/MyButton';
 import image1 from '../../../../../assets/images/products/1.png';
-// import image2 from '../../../../../assets/images/products/2.png';
-// import image3 from '../../../../../assets/images/products/3.png';
-// import image4 from '../../../../../assets/images/products/4.png';
 
-
+// trend product component
 function TrendProduct({ prods }) {
   return (
    <div className='mt-5'>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Wrapper from '../../hoc/Wrapper';
 import Header from '../header/Header';
 import HeaderFull from '../header/HeaderFull/HeaderFull';
@@ -7,6 +5,7 @@ import NewsLetter from '../../containers/Home/NewsLetter/NewsLetter';
 import Footer from '../footer/Footer';
 import Main from '../../containers/Cart/Main/Main';
 
+// cart layer
 function CartLayer() {
   return (
     <Wrapper class='shop'>

@@ -1,18 +1,14 @@
-import React from 'react';
+import './Product.scss';
+import Wrapper from '../../../../../hoc/Wrapper';
 import { Col, Card, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
-import './Product.scss';
-
-import Wrapper from '../../../../../hoc/Wrapper';
-
-import image1 from '../../../../../assets/images/products/7.png';
-import image2 from '../../../../../assets/images/products/5.png';
-// import image3 from '../../../../../assets/images/products/4.png';
-// import image4 from '../../../../../assets/images/products/3.png';
-
 import MyButton from '../../../../../components/UI/Button/MyButton';
 
+// images
+import image1 from '../../../../../assets/images/products/7.png';
+import image2 from '../../../../../assets/images/products/5.png';
+
+// product component
 function Product() {
   return (
    <Wrapper class='shop'>

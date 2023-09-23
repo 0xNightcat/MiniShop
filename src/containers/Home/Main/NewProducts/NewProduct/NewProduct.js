@@ -1,13 +1,11 @@
 import './NewProduct.scss';
 import { Col, Card, Row } from 'react-bootstrap';
-
 import MyButton from '../../../../../components/UI/Button/MyButton';
+
+// images
 import image1 from '../../../../../assets/images/products/2.png';
-// import image2 from '../../../../../assets/images/products/2.png';
-// import image3 from '../../../../../assets/images/products/3.png';
-// import image4 from '../../../../../assets/images/products/4.png';
 
-
+// new product component
 function NewProduct({ Newprods }) {
   return (
    <div className='mt-5'>

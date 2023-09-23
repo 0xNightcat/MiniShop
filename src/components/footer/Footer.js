@@ -2,11 +2,12 @@ import './Footer.scss';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
-
+// images
 import elnemad from '../../assets/images/Enemad/1.png';
 import etnemad from '../../assets/images/Enemad/2.png';
 import brand from '../../assets/images/logo/logo.png';
 
+// footer component
 function Footer() {
   return (
     <footer className='footer'>

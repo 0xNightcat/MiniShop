@@ -1,9 +1,10 @@
+import './ProductMain.scss';
 import { Col, Row, Image, Button } from 'react-bootstrap';
 
-import './ProductMain.scss';
-
+// images
 import image from '../../../../assets/images/products/6.png';
 
+// product content component
 function ProductMain() {
   return (
    <Row className='align-items-center'>

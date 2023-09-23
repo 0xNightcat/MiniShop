@@ -1,6 +1,7 @@
 import './Alert.scss';
 import { Modal } from 'react-bootstrap';
 
+// alert modal component
 function Alert({ show, hide }) {
   return (
    <Modal centered show={show} onHide={hide}>

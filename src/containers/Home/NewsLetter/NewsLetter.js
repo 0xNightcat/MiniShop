@@ -1,11 +1,11 @@
-import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-
 import './NewsLetter.scss';
-
-import image from '../../../assets/images/newsletter.jpg';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import NewsLetterForm from './Form/NewsLetterForm';
 
+// images
+import image from '../../../assets/images/newsletter.jpg';
+
+// newsletter component
 function NewsLetter() {
   return (
     <section className='newsletter'>

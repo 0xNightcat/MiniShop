@@ -5,6 +5,7 @@ import NewsLetter from '../../containers/Home/NewsLetter/NewsLetter';
 import Footer from '../footer/Footer';
 import Main from '../../containers/Product/Main/Main';
 
+// product layer
 function ProductLayer() {
   return (
     <Wrapper class='shop'>

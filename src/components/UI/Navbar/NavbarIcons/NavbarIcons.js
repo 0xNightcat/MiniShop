@@ -1,11 +1,11 @@
-import React from 'react';
+import './NavbarIcons.scss';
 import { Dropdown, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import './NavbarIcons.scss';
-
+// images
 import cartImg from '../../../../assets/images/products/11.png';
 
+// navbar icons comopnent
 function NavbarIcons() {
   return (
     <div className='nav-icons'>

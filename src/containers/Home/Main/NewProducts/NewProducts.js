@@ -1,12 +1,11 @@
+import './NewProducts.scss';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
-import { homeAction } from '../../../../action/homeAction';
-
-import './NewProducts.scss';
-
+import { getProducts } from '../../../../action/homeAction';
 import NewProduct from './NewProduct/NewProduct';
 
+// new products component
 function NewProducts() {
   const dispatch = useDispatch();
   
@@ -15,7 +14,7 @@ function NewProducts() {
   const { products } = home;
 
   useEffect(() => {
-    dispatch(homeAction());
+    dispatch(getProducts());
   }, [])
 
   // sort products by more sale

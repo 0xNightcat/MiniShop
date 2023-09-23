@@ -1,12 +1,9 @@
-import React from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
-
 import './Products.scss';
-
 import Wrapper from '../../../../hoc/Wrapper';
-
+import { Container, Row, Col, Form } from 'react-bootstrap';
 import Product from './Product/Product';
 
+// products component
 function Products() {
   return (
     <Wrapper class='shop-products'>
