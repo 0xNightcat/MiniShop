@@ -1,7 +1,7 @@
-import React from 'react';
+import './Footer.scss';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
-import './Footer.scss';
 
 import elnemad from '../../assets/images/Enemad/1.png';
 import etnemad from '../../assets/images/Enemad/2.png';
@@ -46,20 +46,20 @@ function Footer() {
             </Col>
             <Col md={2}>
               <ul>
-                <li><a href='#'>خانه</a></li>
-                <li><a href='#'>فروشگاه</a></li>
-                <li><a href='#'>درباره ما</a></li>
-                <li><a href='#'>ارتباط با ما</a></li>
-                <li><a href='#'>سوالات متداول</a></li>
+                <li><Link to='/'>خانه</Link></li>
+                <li><Link to='/shop'>فروشگاه</Link></li>
+                <li><Link to='#'>درباره ما</Link></li>
+                <li><Link to='#'>ارتباط با ما</Link></li>
+                <li><Link to='#'>سوالات متداول</Link></li>
               </ul>
             </Col>
             <Col md={2}>
             <ul>
-                <li><a href='#'>پوشاک</a></li>
-                <li><a href='#'>تکنولوژی</a></li>
-                <li><a href='#'>لوازم خانگی</a></li>
-                <li><a href='#'>لوازم آرایشی</a></li>
-                <li><a href='#'>لوازم تحریر</a></li>
+                <li><Link to='/shop'>پوشاک</Link></li>
+                <li><Link to='/shop'>تکنولوژی</Link></li>
+                <li><Link to='/shop'>لوازم خانگی</Link></li>
+                <li><Link to='/shop'>لوازم آرایشی</Link></li>
+                <li><Link to='/shop'>لوازم تحریر</Link></li>
               </ul>
             </Col>
             <Col md={2}>
