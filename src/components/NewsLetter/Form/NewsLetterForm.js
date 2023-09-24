@@ -17,7 +17,7 @@ function NewsLetterForm() {
    const NewsLetterHandler = (event) => {
       
       const inputValue = event.target.previousElementSibling.previousElementSibling.value;
-      const emailPattern = /^[a-zA-z1-9\.\-\_]+@(gmail.com)$/;
+      const emailPattern = /^[a-zA-z1-9.-_]+@(gmail.com)$/;
       
       const data = {
          gmail: inputValue

@@ -14,7 +14,7 @@ export const getProducts = () => async (dispatch) => {
 export const showAlert = (datas) => async (dispatch) => {
    await axios.post('http://localhost:7000/newsletter_users', datas)
       .then((response) => {
-         if(response.status == 200 || response.status == 201) {
+         if(response.status === 200 || response.status === 201) {
             dispatch({
                type: 'SHOW_ALERT',
             })

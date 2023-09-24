@@ -15,7 +15,7 @@ function TrendProducts() {
 
   useEffect(() => {
     dispatch(getProducts());
-  }, [])
+  }, [dispatch])
 
   // sort products by more sale
   products.sort((a, b) => {
