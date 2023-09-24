@@ -3,11 +3,6 @@ import Wrapper from '../../../../hoc/Wrapper';
 import { Container, Row, Col, Image, Table, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-// images
-import image1 from '../../../../assets/images/products/2.png';
-import image2 from '../../../../assets/images/products/3.png';
-import image3 from '../../../../assets/images/products/4.png';
-
 // cart content component
 function CartInner() {
   return (
@@ -28,21 +23,21 @@ function CartInner() {
                      </thead>
                      <tbody>
                         <tr>
-                           <td><Image src={image1} fluid /></td>
+                           <td><Image src='#' fluid /></td>
                            <td>محصول نمونه</td>
                            <td>۲۵۰۰۰۰ تومان</td>
                            <td>۲</td>
                            <td><i className='fa fa-trash text-danger'></i></td>
                         </tr>
                         <tr>
-                           <td><Image src={image2} fluid /></td>
+                           <td><Image src='#' fluid /></td>
                            <td>محصول نمونه</td>
                            <td>۴۵۰۰۰۰ تومان</td>
                            <td>۱</td>
                            <td><i className='fa fa-trash text-danger'></i></td>
                         </tr>
                         <tr>
-                           <td><Image src={image3} fluid /></td>
+                           <td><Image src='#' fluid /></td>
                            <td>محصول نمونه</td>
                            <td>۲۲۰۰۰۰ تومان</td>
                            <td>۳</td>

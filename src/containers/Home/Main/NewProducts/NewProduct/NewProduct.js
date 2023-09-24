@@ -2,9 +2,6 @@ import './NewProduct.scss';
 import { Col, Card, Row } from 'react-bootstrap';
 import MyButton from '../../../../../components/UI/Button/MyButton';
 
-// images
-import image1 from '../../../../../assets/images/products/2.png';
-
 // new product component
 function NewProduct({ Newprods }) {
   return (
@@ -15,7 +12,7 @@ function NewProduct({ Newprods }) {
             return (
                <Col key={product.id} md={3}>
                   <Card className='text-center'>
-                     <Card.Img src={image1}  className='m-auto' />
+                     <Card.Img src={`${product.src}`}  className='m-auto' />
                      <Card.Title>{product.name}</Card.Title>
                      <Card.Body>
                         <div className='price'>

@@ -2,9 +2,6 @@ import './NavbarIcons.scss';
 import { Dropdown, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-// images
-import cartImg from '../../../../assets/images/products/11.png';
-
 // navbar icons comopnent
 function NavbarIcons() {
   return (
@@ -18,7 +15,7 @@ function NavbarIcons() {
             <div className='cart-box'>
               <div className='cart-box-item'>
                   <div className='cart-image'>
-                    <Image src={cartImg} />
+                    <Image src='#' />
                     <p className='cart-title'>عنوان محصول</p>
                   </div>
                   <div className='cart-number'>

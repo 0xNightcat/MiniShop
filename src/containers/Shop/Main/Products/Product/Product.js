@@ -4,9 +4,6 @@ import { Col, Card, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import MyButton from '../../../../../components/UI/Button/MyButton';
 
-// images
-import image1 from '../../../../../assets/images/products/7.png';
-
 // product component
 function Product({ pros }) {
   return (
@@ -17,8 +14,8 @@ function Product({ pros }) {
                return (
                   <Col key={product.id} md={3}>
                      <Card className='text-center border-0'>
-                        <Link to='/product'>
-                           <Card.Img src={image1}  className='m-auto' />
+                        <Link to={`/product/${product.id}`}>
+                           <Card.Img src={`${product.src}`}  className='m-auto' />
                            <Card.Title>{product.name}</Card.Title>
                            <Card.Body>
                               <div className='price'>

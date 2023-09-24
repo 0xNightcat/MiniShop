@@ -1,21 +1,32 @@
 import './ProductMain.scss';
 import { Col, Row, Image, Button } from 'react-bootstrap';
-
-// images
-import image from '../../../../assets/images/products/6.png';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProduct } from '../../../../action/productAction';
 
 // product content component
 function ProductMain() {
+   const dispatch = useDispatch();
+   const params = useParams();
+
+   const productReducer = useSelector((state) => state.product);
+   const { product } = productReducer;
+
+   useEffect(() => {
+      dispatch(getProduct(params.id));
+   }, [dispatch, params.id])
+
   return (
    <Row className='align-items-center'>
       <Col md={6}>
          <div className='product-image'>
-            <Image src={image} fluid />
+            <Image src={product.src} fluid />
          </div>
       </Col>
       <Col md={6}>
          <div className='product-info'>
-            <h3 className='title'>لپتاپ Asus Gaming 2023</h3>
+            <h3 className='title'>{product.name}</h3>
             <div className='stars'>
                <i className='fa fa-star'></i>
                <i className='fa fa-star'></i>
@@ -24,8 +35,8 @@ function ProductMain() {
                <i className='fa fa-star'></i>
             </div>
             <div className='price-cat'>
-               <p className='price'>قیمت: <span>۲۴۰۰۰۰۰۰۰ تومان</span></p>
-               <p className='category'>دسته بندی: <span>تکنولوژی</span></p>
+               <p className='price'>قیمت: <span>{product.price} تومان</span></p>
+               <p className='category'>دسته بندی: <span>{product.cat}</span></p>
             </div>
             <p className='desc'>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد

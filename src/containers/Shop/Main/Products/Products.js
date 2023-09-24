@@ -15,7 +15,7 @@ function Products() {
 
    useEffect(() => {
       dispatch(getProducts());
-   }, [])
+   }, [dispatch])
 
   return (
     <Wrapper class='shop-products'>
