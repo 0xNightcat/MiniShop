@@ -1,10 +1,22 @@
 import './Products.scss';
 import Wrapper from '../../../../hoc/Wrapper';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import { Container, Row, Col, Form, Pagination } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import Product from './Product/Product';
+import { getProducts } from '../../../../action/publicAction';
 
 // products component
 function Products() {
+   const dispatch = useDispatch();
+
+   const publicReducer = useSelector((state) => state.public);
+   const { products } = publicReducer;
+
+   useEffect(() => {
+      dispatch(getProducts());
+   }, [])
+
   return (
     <Wrapper class='shop-products'>
       <Container>
@@ -33,7 +45,16 @@ function Products() {
             </Row>
          </div>
          <div className='pros-row'>
-         <Product />
+            <Product pros={products} />
+
+            <Pagination dir='ltr' className='mt-5 justify-content-center'>
+               <Pagination.Prev />
+               <Pagination.Item>4</Pagination.Item>
+               <Pagination.Item>3</Pagination.Item>
+               <Pagination.Item>2</Pagination.Item>
+               <Pagination.Item active>1</Pagination.Item>
+               <Pagination.Next />
+            </Pagination>
          </div>
       </Container>
     </Wrapper>

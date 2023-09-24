@@ -1,7 +1,7 @@
 import Wrapper from '../../hoc/Wrapper';
 import Header from '../header/Header';
 import HeaderFull from '../header/HeaderFull/HeaderFull';
-import NewsLetter from '../../containers/Home/NewsLetter/NewsLetter';
+import NewsLetter from '../NewsLetter/NewsLetter';
 import Footer from '../footer/Footer';
 import Main from '../../containers/Product/Main/Main';
 

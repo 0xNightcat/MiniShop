@@ -1,13 +1,22 @@
-.row {
-   margin-top: 20px !important;
-   .card {
-      .btns {
-         .shop-add {
-            padding: 8px;
-         }
+.shop {
+   .row {
+      margin-top: 20px !important;
+      .col-md-3 {
+         margin-top: 0.6rem;
       }
-      .card-body {
-         padding-bottom: 9px;
+      .card {
+         padding: 10px;
+         &:hover {
+            filter: drop-shadow(0 1px 4px rgba(0,0,0,.2));
+         }
+         .btns {
+            .shop-add {
+               padding: 8px;
+            }
+         }
+         .card-body {
+            padding-bottom: 9px;
+         }
       }
    }
 }

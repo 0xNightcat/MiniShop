@@ -7,7 +7,7 @@ const initialState = {
 }
 
 // home reducer (state handler)
-export const homeReducer = (state = initialState, action) => {
+export const publicReducer = (state = initialState, action) => {
    switch(action.type) {
       case 'GET_PRODUCTS':
          return {

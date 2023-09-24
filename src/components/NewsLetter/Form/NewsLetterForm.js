@@ -1,17 +1,17 @@
 import './NewsLetterForm.scss';
-import Wrapper from '../../../../hoc/Wrapper';
-import Alert from '../../../../components/UI/Alert/Alert';
+import Wrapper from '../../../hoc/Wrapper';
+import Alert from '../../../components/UI/Alert/Alert';
 import { Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { showAlert } from '../../../../action/homeAction';
-import { hideAlert } from '../../../../action/homeAction';
+import { showAlert } from '../../../action/publicAction';
+import { hideAlert } from '../../../action/publicAction';
 
 // newsletter form component
 function NewsLetterForm() {
    
    const dispatch = useDispatch();
-   const alertState = useSelector((state) => state.home);
-   const { alertShow } = alertState;
+   const publicReducer = useSelector((state) => state.public);
+   const { alertShow } = publicReducer;
 
    // newsletter handler
    const NewsLetterHandler = (event) => {

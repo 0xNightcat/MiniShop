@@ -4,10 +4,10 @@ import { legacy_createStore as createStore, combineReducers, applyMiddleware } f
 import thunk from 'redux-thunk';
 
 // reducers handle
-import { homeReducer } from './reducer/homeReducer';
+import { publicReducer } from './reducer/publicReducer';
 
 const reducer = combineReducers({
-   home: homeReducer
+   public: publicReducer
 }) 
 
 const initialState = {

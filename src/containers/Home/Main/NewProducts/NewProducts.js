@@ -2,7 +2,7 @@ import './NewProducts.scss';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
-import { getProducts } from '../../../../action/homeAction';
+import { getProducts } from '../../../../action/publicAction';
 import NewProduct from './NewProduct/NewProduct';
 
 // new products component
@@ -10,8 +10,8 @@ function NewProducts() {
   const dispatch = useDispatch();
   
   // get states
-  const home = useSelector((state) => state.home);
-  const { products } = home;
+  const publicReducer = useSelector((state) => state.public);
+  const { products } = publicReducer;
 
   useEffect(() => {
     dispatch(getProducts());

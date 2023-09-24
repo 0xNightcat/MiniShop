@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import HeaderSlide from '../../containers/Home/HeaderSlide/HeaderSlide';
 import TopSales from '../../containers/Home/TopSales/TopSales';
 import Main from '../../containers/Home/Main/Main';
-import NewsLetter from '../../containers/Home/NewsLetter/NewsLetter';
+import NewsLetter from '../NewsLetter/NewsLetter';
 import Footer from '../footer/Footer';
 
 // home layer
