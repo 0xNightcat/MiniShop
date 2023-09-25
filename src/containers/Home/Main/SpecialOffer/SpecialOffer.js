@@ -2,7 +2,7 @@ import './SpecialOffer.scss';
 import { Image } from 'react-bootstrap';
 
 // images
-import offerImage from '../../../../assets/images/offer.jpg';
+import offerImage from '../../../../assets/static/offer.jpg';
 
 // special offer component
 function SpecialOffer() {

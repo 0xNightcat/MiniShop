@@ -3,7 +3,7 @@ import Wrapper from '../../../hoc/Wrapper';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 // images
-import image from '../../../assets/images/small_pros.jpg';
+import image from '../../../assets/static/small_pros.jpg';
 
 // top sales component
 function TopSales() {

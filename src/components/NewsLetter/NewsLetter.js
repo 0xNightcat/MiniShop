@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import NewsLetterForm from './Form/NewsLetterForm';
 
 // images
-import image from '../../assets/images/newsletter.jpg';
+import image from '../../assets/static/newsletter.jpg';
 
 // newsletter component
 function NewsLetter() {
