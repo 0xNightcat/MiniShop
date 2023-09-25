@@ -1,5 +1,6 @@
 import './NewProduct.scss';
 import { Col, Card, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import MyButton from '../../../../../components/UI/Button/MyButton';
 
 // new product component
@@ -21,7 +22,11 @@ function NewProduct({ Newprods }) {
                         <div className='category'>
                            <span>{product.category}</span>
                         </div>
-                        <MyButton class='add block mt-3'>مشاهده محصول</MyButton>
+                        <Link to={`product/${product.id}`}>
+                           <MyButton class='add block mt-3'>
+                              مشاهده محصول   
+                           </MyButton>
+                        </Link>
                      </Card.Body>
                   </Card>
                </Col>
