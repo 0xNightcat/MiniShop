@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Product from './Product/Product';
 import { getProducts } from '../../../../action/shopAction';
 import { searchedProducts } from '../../../../action/shopAction';
+import { sortProducts } from '../../../../action/shopAction';
 import Filters from './Filters/Filters';
 
 // products component
@@ -26,11 +27,22 @@ function Products() {
       dispatch(searchedProducts(inputValue))
    }
 
+   //
+   const sortProductsFilter = (event) => {
+      const sortItemId = Number(event.target.value);
+
+      dispatch(sortProducts(sortItemId));
+   }
+
+
   return (
     <Wrapper class='shop-products'>
       <Container>
          <div className='top-row'>
-            <Filters input={(event) => inputValueHandler(event)} />
+            <Filters 
+            input={(event) => inputValueHandler(event)} 
+            sort={(event) => sortProductsFilter(event)}
+            />
          </div>
          <div className='pros-row'>
             <Product pros={products} />

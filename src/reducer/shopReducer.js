@@ -18,6 +18,11 @@ export const shopReducer = (state = initialState, action) => {
             ...state,
             products: action.payload,
          }
+      case 'SORT_PRODUCTS':
+         return {
+            ...state,
+            products: action.payload,
+         }
       
       default:
          return state;

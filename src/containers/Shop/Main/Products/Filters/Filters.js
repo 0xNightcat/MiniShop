@@ -1,6 +1,6 @@
 import { Row, Col, Form } from 'react-bootstrap';
 
-function Filters({ input }) {
+function Filters({ input, sort }) {
   return (
       <Row className='justify-content-between align-items-center'>
          <Col md={5}>
@@ -14,7 +14,7 @@ function Filters({ input }) {
             <div className='sort'>
                <div className='sort-by'>
                   <Form.Label>مرتب سازی:</Form.Label>
-                  <Form.Select size='sm'>
+                  <Form.Select onChange={sort} size='sm'>
                      <option>مرتب سازی</option>
                      <option value='1'>گرانترین</option>
                      <option value='2'>ارزان ترین</option>
