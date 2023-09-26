@@ -1,48 +1,36 @@
 import './Products.scss';
 import Wrapper from '../../../../hoc/Wrapper';
-import { Container, Row, Col, Form, Pagination } from 'react-bootstrap';
+import { Container, Pagination } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Product from './Product/Product';
-import { getProducts } from '../../../../action/publicAction';
+import { getProducts } from '../../../../action/shopAction';
+import { searchedProducts } from '../../../../action/shopAction';
+import Filters from './Filters/Filters';
 
 // products component
 function Products() {
    const dispatch = useDispatch();
 
-   const publicReducer = useSelector((state) => state.public);
-   const { products } = publicReducer;
+   const shopReducer = useSelector((state) => state.shop);
+   const { products } = shopReducer;
 
    useEffect(() => {
       dispatch(getProducts());
    }, [dispatch])
+   
+   // search products handler
+   const inputValueHandler = (event) => {
+      const inputValue = event.target.value;
+
+      dispatch(searchedProducts(inputValue))
+   }
 
   return (
     <Wrapper class='shop-products'>
       <Container>
          <div className='top-row'>
-            <Row className='justify-content-between align-items-center'>
-               <Col md={5}>
-                  <div className='search'>                  
-                     <Form.Label>جستجوی محصول:</Form.Label>
-                     <Form.Control type='text' />
-                     <i className='fa fa-search'></i>
-                  </div>
-               </Col>
-               <Col md={2}>
-                  <div className='sort'>
-                     <div className='sort-by'>
-                        <Form.Label>مرتب سازی:</Form.Label>
-                        <Form.Select size='sm'>
-                           <option>مرتب سازی</option>
-                           <option value='1'>گرانترین</option>
-                           <option value='2'>ارزان ترین</option>
-                           <option value='3'>جدید ترین</option>
-                        </Form.Select>
-                     </div>
-                  </div>
-               </Col>
-            </Row>
+            <Filters input={(event) => inputValueHandler(event)} />
          </div>
          <div className='pros-row'>
             <Product pros={products} />

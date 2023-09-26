@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import NavbarIcons from './NavbarIcons/NavbarIcons';
 
 // images
-import logo from '../../../assets/images/logo/logo.png';
+import logo from '../../../assets/static/logo/logo.png';
 
 // top navbar component
 function TopNavbar() {

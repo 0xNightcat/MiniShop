@@ -5,11 +5,13 @@ import thunk from 'redux-thunk';
 
 // reducers handle
 import { publicReducer } from './reducer/publicReducer';
-import { productReducer } from './reducer/productReducerr';
+import { productReducer } from './reducer/productReducer';
+import { shopReducer } from './reducer/shopReducer';
 
 const reducer = combineReducers({
    public: publicReducer,
-   product: productReducer
+   product: productReducer,
+   shop: shopReducer
 }) 
 
 const initialState = {

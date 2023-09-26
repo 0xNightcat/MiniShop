@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 // images
-import elnemad from '../../assets/images/Enemad/1.png';
-import etnemad from '../../assets/images/Enemad/2.png';
-import brand from '../../assets/images/logo/logo.png';
+import elnemad from '../../assets/static/Enemad/1.png';
+import etnemad from '../../assets/static/Enemad/2.png';
+import brand from '../../assets/static/logo/logo.png';
 
 // footer component
 function Footer() {
