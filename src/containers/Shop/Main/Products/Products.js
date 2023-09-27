@@ -7,6 +7,7 @@ import Product from './Product/Product';
 import { getProducts } from '../../../../action/shopAction';
 import { searchedProducts } from '../../../../action/shopAction';
 import { sortProducts } from '../../../../action/shopAction';
+import { updateCart } from '../../../../action/cartAction';
 import Filters from './Filters/Filters';
 
 // products component
@@ -15,6 +16,9 @@ function Products() {
 
    const shopReducer = useSelector((state) => state.shop);
    const { products } = shopReducer;
+
+   const cartReducer = useSelector((state) => state.cart);
+   const { cartProducts } = cartReducer;
 
    useEffect(() => {
       dispatch(getProducts());
@@ -27,13 +31,18 @@ function Products() {
       dispatch(searchedProducts(inputValue))
    }
 
-   //
+   // sort products handler
    const sortProductsFilter = (event) => {
       const sortItemId = Number(event.target.value);
 
       dispatch(sortProducts(sortItemId));
    }
 
+   // add to car handler
+   const addToCartHandler = (id) => {
+      dispatch(updateCart(id));
+   }
+   
 
   return (
     <Wrapper class='shop-products'>
@@ -45,7 +54,7 @@ function Products() {
             />
          </div>
          <div className='pros-row'>
-            <Product pros={products} />
+            <Product addToCart={addToCartHandler} pros={products} />
 
             <Pagination dir='ltr' className='mt-5 justify-content-center'>
                <Pagination.Prev />

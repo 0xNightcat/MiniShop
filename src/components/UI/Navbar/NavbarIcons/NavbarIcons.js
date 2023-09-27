@@ -1,9 +1,15 @@
 import './NavbarIcons.scss';
-import { Dropdown, Image, Button } from 'react-bootstrap';
+import { Dropdown, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import CartItem from './CartItem/CartItem';
 
 // navbar icons comopnent
 function NavbarIcons() {
+  const cartReducer = useSelector((state) => state.cart);
+  const { cartProducts } = cartReducer;
+
+
   return (
     <div className='nav-icons'>
       <div className='cart item'>
@@ -13,21 +19,10 @@ function NavbarIcons() {
           </Dropdown.Toggle>
           <Dropdown.Menu className='text-right'>
             <div className='cart-box'>
-              <div className='cart-box-item'>
-                  <div className='cart-image'>
-                    <Image src='#' />
-                    <p className='cart-title'>عنوان محصول</p>
-                  </div>
-                  <div className='cart-number'>
-                    <a href='#'><span className='inc'>+</span></a>
-                    <span className='line'> | </span>
-                    <a href='#'><span className='dec'>-</span></a>
-                  </div>
-                  <div className='cart-remove'>
-                    <Button className='btn-remove border-0 py-1'>X</Button>
-                  </div>
-              </div>
-              <div className='cart-box-bottom'>
+                <CartItem pros={cartProducts} />
+              <div className='cart-box-bottom' style={
+                cartProducts.length > 0 ? {'display':'block'} : {'display':'none'}
+              }>
                 <Button className='btn-clear bg-secondary border-0'>حذف همه</Button>
                 <Link to='/cart'>
                   <Button className='btn-cart bg-success border-0'>سبد خرید</Button>

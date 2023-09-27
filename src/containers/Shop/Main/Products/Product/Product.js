@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import MyButton from '../../../../../components/UI/Button/MyButton';
 
 // product component
-function Product({ pros }) {
+function Product({ pros, addToCart }) {
   return (
    <Wrapper class='shop'>
       <Row>
@@ -27,7 +27,7 @@ function Product({ pros }) {
                            </Card.Body>
                         </Link>
                         <div className='btns'>
-                           <MyButton class='shop-add mt-0 d-block w-100'>اضافه به سبد</MyButton>
+                           <MyButton class='shop-add mt-0 d-block w-100' click={() => addToCart(product.id)}>اضافه به سبد</MyButton>
                         </div>
                      </Card>
                   </Col>
