@@ -1,5 +1,5 @@
 import './NavbarIcons.scss';
-import { Dropdown, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import CartItem from './CartItem/CartItem';
@@ -13,11 +13,12 @@ function NavbarIcons() {
   return (
     <div className='nav-icons'>
       <div className='cart item'>
-      <Dropdown>
-          <Dropdown.Toggle id='drop-user' variant='none' className='border-0'>
-            <a href='#'><i className='fa fa-shopping-cart'></i></a>
-          </Dropdown.Toggle>
-          <Dropdown.Menu className='text-right'>
+        <div className='dropdown'>
+          <div id='drop-user' variant='none' className='border-0 dropbtn'>
+            <span className='badge bg-danger'>{cartProducts.length}</span>
+            <a className='item'><i className='fa fa-shopping-cart'></i></a>
+          </div>
+          <div className='text-right drop-content'>
             <div className='cart-box'>
                 <CartItem pros={cartProducts} />
               <div className='cart-box-bottom' style={
@@ -29,8 +30,8 @@ function NavbarIcons() {
                 </Link>
               </div>
             </div>
-          </Dropdown.Menu>
-        </Dropdown>
+          </div>
+        </div>
       </div>
       <div className='dark-mode item'>
          <a href='#'><i className='fa fa-circle'></i></a>

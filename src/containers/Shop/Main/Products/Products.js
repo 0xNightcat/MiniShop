@@ -17,9 +17,6 @@ function Products() {
    const shopReducer = useSelector((state) => state.shop);
    const { products } = shopReducer;
 
-   const cartReducer = useSelector((state) => state.cart);
-   const { cartProducts } = cartReducer;
-
    useEffect(() => {
       dispatch(getProducts());
    }, [dispatch])
@@ -38,7 +35,7 @@ function Products() {
       dispatch(sortProducts(sortItemId));
    }
 
-   // add to car handler
+   // add to cart handler
    const addToCartHandler = (id) => {
       dispatch(updateCart(id));
    }
