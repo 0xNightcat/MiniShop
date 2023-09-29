@@ -1,0 +1,21 @@
+.mini-alert {
+  position: fixed;
+  top: 12%;
+  left: -15%;
+  width: 245px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  z-index: 999;
+  transition: 0.1s;
+  &.show {
+    left: 2%;
+  }
+  &.hide {
+    left: -25%;
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 14.5px;
+  }
+}

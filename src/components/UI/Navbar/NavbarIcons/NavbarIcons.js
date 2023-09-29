@@ -1,13 +1,21 @@
 import './NavbarIcons.scss';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import CartItem from './CartItem/CartItem';
+import { getProducts } from '../../../../action/shopAction';
 
 // navbar icons comopnent
 function NavbarIcons() {
+  const dispatch = useDispatch();
+
   const cartReducer = useSelector((state) => state.cart);
   const { cartProducts } = cartReducer;
+
+  useEffect(() => {
+    dispatch(getProducts());
+ }, [dispatch])
 
 
   return (

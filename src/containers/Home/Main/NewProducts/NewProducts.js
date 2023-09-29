@@ -28,8 +28,6 @@ function NewProducts() {
     return 0;
   });
 
-  console.log(products);
-
   const newestPros = products.slice(0, 4); // limit products count
 
   return (

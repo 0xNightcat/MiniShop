@@ -9,6 +9,7 @@ import { searchedProducts } from '../../../../action/shopAction';
 import { sortProducts } from '../../../../action/shopAction';
 import { updateCart } from '../../../../action/cartAction';
 import Filters from './Filters/Filters';
+import MiniAlert from '../../../../components/UI/Alert/MiniAlert';
 
 // products component
 function Products() {
@@ -43,6 +44,7 @@ function Products() {
 
   return (
     <Wrapper class='shop-products'>
+      <MiniAlert />
       <Container>
          <div className='top-row'>
             <Filters 

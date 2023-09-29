@@ -7,9 +7,18 @@ import Cart from './containers/Cart/Cart';
 import Checkout from './containers/Checkout/Checkout';
 import Product from './containers/Product/Product';
 import { ScrollToTop } from './components/UI/ScrollToTop/ScrollToTop';
+import { fetchProducts } from './action/cartAction';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 
 // app component (main)
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch])
+
   return (
     <div>
       <Router>
