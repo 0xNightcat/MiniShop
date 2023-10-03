@@ -37,6 +37,11 @@ function NavbarIcons() {
   const deleteProductHandler = (id) => {
     dispatch(deleteProduct(id));
   }
+
+  // prevent default action
+  const preventDefauleAction = (event) => {
+    event.preventDefault();
+  }
   
 
   return (
@@ -45,7 +50,7 @@ function NavbarIcons() {
         <div className='dropdown'>
           <div id='drop-user' variant='none' className='border-0 dropbtn'>
             <span className='badge bg-danger'>{cartProducts.length}</span>
-            <a className='item'><i className='fa fa-shopping-cart'></i></a>
+            <a href='!#' className='item' onClick={(event) => preventDefauleAction(event)}><i className='fa fa-shopping-cart'></i></a>
           </div>
           <div className='text-right drop-content'>
             <div className='cart-box'>
@@ -59,7 +64,7 @@ function NavbarIcons() {
                 cartProducts.length > 0 ? {'display':'block'} : {'display':'none'}
               }>
                 <Link to='/cart'>
-                  <Button className='btn-cart bg-success border-0'>سبد خرید</Button>
+                  <Button className='btn-cart bg-success border-0'>ثبت سفارش</Button>
                 </Link>
                 <div className='total-price'>
                   <p>مجموع قیمت:</p>
@@ -70,8 +75,11 @@ function NavbarIcons() {
           </div>
         </div>
       </div>
+      <div className='favorite item'>
+        <Link to='/favorites'><i className='fa fa-heart'></i></Link>
+      </div>
       <div className='dark-mode item'>
-         <a href='#'><i className='fa fa-circle'></i></a>
+         <a href={(event) => preventDefauleAction(event)}><i className='fa fa-circle'></i></a>
       </div>
     </div>
   )

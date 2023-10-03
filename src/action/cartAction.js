@@ -46,8 +46,8 @@ export const incProductCount = (id) => async (dispatch, getState) => {
    const products = getState().public.products;
    const cartProducts = getState().cart.cartProducts;
 
-   const prevProduct = products.filter((item) => item.id == id);
-   const product = cartProducts.filter((item) => item.id == id);
+   const prevProduct = products.filter((item) => item.id === id);
+   const product = cartProducts.filter((item) => item.id === id);
 
    const basePrice = prevProduct[0].price;
 
@@ -67,8 +67,8 @@ export const decProductCount = (id) => async (dispatch, getState) => {
    const products = getState().public.products;
    const cartProducts = getState().cart.cartProducts;
 
-   const prevProduct = products.filter((item) => item.id == id);
-   const product = cartProducts.filter((item) => item.id == id);
+   const prevProduct = products.filter((item) => item.id === id);
+   const product = cartProducts.filter((item) => item.id === id);
 
    const basePrice = prevProduct[0].price;
 
@@ -87,7 +87,7 @@ export const decProductCount = (id) => async (dispatch, getState) => {
 export const deleteProduct = (id) => async (dispatch, getState) => {
    const products = getState().cart.cartProducts;
 
-   const product = products.filter((item) => item.id == id);
+   const product = products.filter((item) => item.id === id);
 
    await axios.delete(`http://localhost:7000/cart_products/${id}`, product[0]);
 

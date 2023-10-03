@@ -29,7 +29,7 @@ function TopNavbar() {
             <Nav className='justify-content-center'>
                <Nav.Item><Link to='/'>خانه</Link></Nav.Item>
                <Nav.Item><Link to='/shop'>فروشگاه</Link></Nav.Item>
-               <Nav.Item><Link to='/cart'>سبد خرید</Link></Nav.Item>
+               <Nav.Item><Link to='/favorites'>علاقه مندی ها</Link></Nav.Item>
             </Nav>
          </div>
       </Col>

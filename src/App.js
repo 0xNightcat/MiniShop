@@ -6,6 +6,7 @@ import Shop from './containers/Shop/Shop';
 import Cart from './containers/Cart/Cart';
 import Checkout from './containers/Checkout/Checkout';
 import Product from './containers/Product/Product';
+import Favorites from './containers/Favorites/Favorites';
 import { ScrollToTop } from './components/UI/ScrollToTop/ScrollToTop';
 import { fetchProducts } from './action/cartAction';
 import { useEffect } from 'react';
@@ -29,6 +30,7 @@ function App() {
             <Route path='/cart' Component={Cart} />
             <Route path='/checkout' Component={Checkout} />
             <Route path='/product/:id' Component={Product} />
+            <Route path='/favorites' Component={Favorites} />
           </Routes>
         </ScrollToTop>
       </Router>

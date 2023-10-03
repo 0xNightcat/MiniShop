@@ -34,7 +34,7 @@ export const cartReducer = (state = initialState, action) => {
          return {
             ...state,
             cartProducts: [...state.cartProducts].filter(item => {
-               return item.id == incProduct.id ? item = incProduct : item = item
+               return item.id === incProduct.id ? item = incProduct : item
             })
       }
       case 'DEC_COUNT':
@@ -42,7 +42,7 @@ export const cartReducer = (state = initialState, action) => {
          return {
             ...state,
             cartProducts: [...state.cartProducts].filter(item => {
-               return item.id == decProduct.id ? item = decProduct : item = item
+               return item.id === decProduct.id ? item = decProduct : item
             })
       }
       case 'DELETE_PRODUCT':
@@ -50,7 +50,7 @@ export const cartReducer = (state = initialState, action) => {
          return {
             ...state,
             cartProducts: [...state.cartProducts].filter(item => {
-               return item.id == delProduct.id ? item.remove : item = item
+               return item.id === delProduct.id ? item.remove : item
             })
       }
       case 'CLEAR_CART':

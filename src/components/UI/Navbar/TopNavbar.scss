@@ -1,16 +1,10 @@
 .header-right-side {
    .item {
-      margin-left: 8px;
       font-size: 22px;
       .fa-user {
-         // color: #028602;
          margin-left: 4px;
       }
-      // .fa-shopping-cart {
-      //    // color: #065fa8;
-      // }
       .fa-heart {
-         margin-right: 12px;
          &.like {
             color: red;
          }

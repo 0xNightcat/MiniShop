@@ -54,8 +54,12 @@ function ProductMain() {
                <p className='desc'>
                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
                </p>
-               <Button className='pro-btn px-5 py-2' onClick={addToCartHandler}>اضافه به سبد</Button>
-               <Button className='pro-btn btn-danger px-5 py-2'>افزودن به علاقه مندی</Button>
+               <Button className='pro-btn px-4 py-2' onClick={addToCartHandler}>اضافه به سبد
+                  <i className='fa fa-plus'></i>
+               </Button>
+               <Button className='pro-btn btn-danger px-3 py-2'>افزودن به علاقه مندی
+                  <i className='fa fa-heart'></i>
+               </Button>
             </div>
          </Col>
       </Row>

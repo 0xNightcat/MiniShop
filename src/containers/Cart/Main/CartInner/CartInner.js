@@ -63,12 +63,12 @@ function CartInner() {
                         <div className='btns'>
                            <Link to='/checkout'>
                               <Button className='checkout btn-danger d-block w-100 py-2'>
-                                 ثبت سفارش
+                                 تکمیل سفارش
                               </Button>
                            </Link>
                            <Link to='/shop'>
                               <Button className='continue d-block w-100 mt-2 py-2'>
-                                 ادامه خرید
+                                 فروشگاه
                               </Button>
                            </Link>
                         </div>
