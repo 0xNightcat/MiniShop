@@ -11,6 +11,7 @@ import { ScrollToTop } from './components/UI/ScrollToTop/ScrollToTop';
 import { fetchProducts } from './action/cartAction';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import Loading from './components/UI/Loading/Loading';
 
 // app component (main)
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div>
+      <Loading />
       <Router>
         <ScrollToTop>
           <Routes>

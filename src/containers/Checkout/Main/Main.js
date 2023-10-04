@@ -10,7 +10,7 @@ function Main() {
       <Container>
         <Breadcrumb dir='ltr'>
             <Breadcrumb.Item href='#' active>تکمیل سفارش</Breadcrumb.Item>
-            <Breadcrumb.Item><Link to='/'>خانه</Link></Breadcrumb.Item>
+            <Breadcrumb.Item><Link to='/cart'>سبد خرید</Link></Breadcrumb.Item>
          </Breadcrumb>
 
          <h2 className='text-center mt-5'>تکمیل سفارش</h2>

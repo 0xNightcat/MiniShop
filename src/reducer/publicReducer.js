@@ -4,6 +4,7 @@
 const initialState = {
    products: [],
    alertShow: false,
+   loader: false
 }
 
 // home reducer (state handler)
@@ -23,6 +24,16 @@ export const publicReducer = (state = initialState, action) => {
          return {
             ...state,
             alertShow: false,
+      }
+      case 'SHOW_LOADER':
+         return {
+            ...state,
+            loader: true,
+      }
+      case 'HIDE_LOADER':
+         return {
+            ...state,
+            loader: false,
       }
       
       default:

@@ -7,7 +7,7 @@ export const updateCart = (id) => async (dispatch, getState) => {
    const hideAlert = () => {
       setTimeout(() => {
          dispatch({ type: 'HIDE_ALERT' })
-      }, 1400)
+      }, 1000)
    }
 
    const miniAlertElement = document.querySelector('.mini-alert p');

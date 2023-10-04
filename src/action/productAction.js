@@ -14,3 +14,17 @@ export const getProduct = (id) => async (dispatch) => {
       }
    })
 }
+
+// show loader
+export const showLoader = () => async (dispatch) => {
+   dispatch({
+      type: 'SHOW_LOADER'
+   })
+}
+
+// hide loader
+export const hideLoader = () => async (dispatch) => {
+   dispatch({
+      type: 'HIDE_LOADER'
+   })
+}

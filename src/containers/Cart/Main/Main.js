@@ -11,7 +11,7 @@ function Main() {
       <Container>
          <Breadcrumb dir='ltr'>
                <Breadcrumb.Item href='#' active>سبد خرید</Breadcrumb.Item>
-               <Breadcrumb.Item><Link to='/'>خانه</Link></Breadcrumb.Item>
+               <Breadcrumb.Item><Link to='/shop'>فروشگاه</Link></Breadcrumb.Item>
          </Breadcrumb>
 
          <CartInner />

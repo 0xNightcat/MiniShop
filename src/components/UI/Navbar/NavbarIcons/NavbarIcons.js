@@ -3,16 +3,20 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import CartItem from './CartItem/CartItem';
 import { getProducts } from '../../../../action/shopAction';
 import { incProductCount } from '../../../../action/cartAction';
 import { decProductCount } from '../../../../action/cartAction';
 import { deleteProduct } from '../../../../action/cartAction';
 import { totalPriceCart } from '../../../../action/cartAction';
+import { showLoader } from '../../../../action/productAction';
+import { hideLoader } from '../../../../action/productAction';
 
 // navbar icons comopnent
 function NavbarIcons() {
   const dispatch = useDispatch();
+  const navigation = useNavigate();
 
   const cartReducer = useSelector((state) => state.cart);
   const { cartProducts } = cartReducer;
@@ -42,6 +46,17 @@ function NavbarIcons() {
   const preventDefauleAction = (event) => {
     event.preventDefault();
   }
+
+  // apply cart
+  const applyCart = () => {
+    dispatch(showLoader());
+    
+    setTimeout(() => {
+        dispatch(hideLoader());
+      
+      navigation('/cart');
+    }, 1000);
+  }
   
 
   return (
@@ -63,9 +78,9 @@ function NavbarIcons() {
               <div className='cart-box-bottom' style={
                 cartProducts.length > 0 ? {'display':'block'} : {'display':'none'}
               }>
-                <Link to='/cart'>
-                  <Button className='btn-cart bg-success border-0'>ثبت سفارش</Button>
-                </Link>
+                <Button className='btn-cart bg-success border-0' onClick={applyCart}>
+                  ثبت سفارش
+                </Button>
                 <div className='total-price'>
                   <p>مجموع قیمت:</p>
                   <p><span>{totalPrice}</span> تومان</p>
