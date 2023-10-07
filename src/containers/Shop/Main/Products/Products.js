@@ -7,6 +7,7 @@ import Product from './Product/Product';
 import { getProducts } from '../../../../action/shopAction';
 import { searchedProducts } from '../../../../action/shopAction';
 import { sortProducts } from '../../../../action/shopAction';
+import { fetchProducts } from '../../../../action/cartAction';
 import { updateCart } from '../../../../action/cartAction';
 import Filters from './Filters/Filters';
 import MiniAlert from '../../../../components/UI/Alert/MiniAlert';
@@ -39,7 +40,8 @@ function Products() {
    // add to cart handler
    const addToCartHandler = (id) => {
       dispatch(updateCart(id));
-   }
+      dispatch(fetchProducts());
+   }  
    
 
   return (

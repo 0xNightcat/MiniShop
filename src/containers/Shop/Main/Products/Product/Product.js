@@ -13,7 +13,7 @@ function Product({ pros, addToCart }) {
             pros ? pros.map((product) => {
                return (
                   <Col key={product.id} md={3}>
-                     <Card className='text-center border-0'>
+                     <Card className='text-center card-pro border-0'>
                         <Link to={`/product/${product.id}`}>
                            <Card.Img src={`${product.src}`}  className='m-auto' />
                            <Card.Title>{product.name}</Card.Title>

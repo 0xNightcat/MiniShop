@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProduct } from '../../../../action/productAction';
+import { fetchProducts } from '../../../../action/cartAction';
 import { updateCart } from '../../../../action/cartAction';
 import MiniAlert from '../../../../components/UI/Alert/MiniAlert';
 import Wrapper from '../../../../hoc/Wrapper';
@@ -25,6 +26,7 @@ function ProductMain() {
       let productId = Number(params.id);
 
       dispatch(updateCart(productId));
+      dispatch(fetchProducts());
    }
 
 

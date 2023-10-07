@@ -1,0 +1,17 @@
+.table {
+   tbody {
+      tr {
+         td {
+            .btn {
+               padding: 0;
+               background: none;
+               border: none;
+               font-size: 18px !important;
+               &:active {
+                  background-color: #fff;
+               }
+            }
+         }
+      }
+   }
+}

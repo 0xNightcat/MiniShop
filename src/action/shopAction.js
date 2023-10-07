@@ -17,7 +17,7 @@ export const searchedProducts = (value) => async (dispatch, getState) => {
 
    let foundProducts = products.filter((item) => {
       return (
-         item.name.indexOf(value) !== -1
+         item.name.toLowerCase().indexOf(value.toLowerCase()) !== -1
       )
    })
 

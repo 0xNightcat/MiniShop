@@ -6,7 +6,7 @@ export const updateCart = (id) => async (dispatch, getState) => {
 
    const hideAlert = () => {
       setTimeout(() => {
-         dispatch({ type: 'HIDE_ALERT' })
+         dispatch({ type: 'HIDE_WARN' })
       }, 1000)
    }
 
@@ -16,19 +16,16 @@ export const updateCart = (id) => async (dispatch, getState) => {
 
    await axios.post(' http://localhost:7000/cart_products', cartItem[0])
       .then((response) => {
+         dispatch({ type: 'SHOW_WARN' });
          miniAlertElement.textContent = 'محصول به سبد اضافه شد';
          miniAlertElement.parentElement.style.background = 'green';
          hideAlert();
       }).catch((error) => {
+         dispatch({ type: 'SHOW_WARN' });
          miniAlertElement.textContent = 'محصول قبلا اضافه شده است';
          miniAlertElement.parentElement.style.background = 'red';
          hideAlert();
       })
-   
-   dispatch({
-      type: 'UPDATE_CART',
-      payload: cartItem[0]
-   })
 }
 
 // update cart action

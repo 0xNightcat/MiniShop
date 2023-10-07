@@ -10,16 +10,12 @@ const initialState = {
 // cart reducer (state handler)
 export const cartReducer = (state = initialState, action) => {
    switch(action.type) {
-      case 'UPDATE_CART':
-         const product = action.payload;
+      case 'SHOW_WARN':
          return {
             ...state,
-            cartProducts: [...state.cartProducts].filter(item => {
-                  return item.id !== product.id
-            }).concat(product),
             showAlert: true
          }
-      case 'HIDE_ALERT':
+      case 'HIDE_WARN':
          return {
             ...state,
             showAlert: false
