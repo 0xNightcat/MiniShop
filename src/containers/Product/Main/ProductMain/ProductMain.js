@@ -8,6 +8,7 @@ import { fetchProducts } from '../../../../action/cartAction';
 import { updateCart } from '../../../../action/cartAction';
 import MiniAlert from '../../../../components/UI/Alert/MiniAlert';
 import Wrapper from '../../../../hoc/Wrapper';
+import { addProductToFavorite, getFavoriteProducts } from '../../../../action/favoriteAction';
 
 // product content component
 function ProductMain() {
@@ -19,6 +20,7 @@ function ProductMain() {
 
    useEffect(() => {
       dispatch(getProduct(params.id));
+      dispatch(getFavoriteProducts());
    }, [dispatch, params.id])
 
    // add to cart handler
@@ -29,6 +31,13 @@ function ProductMain() {
       dispatch(fetchProducts());
    }
 
+   // add cart to favorites
+   const addToFavorite = () => {
+      const id = Number(params.id);
+      
+      dispatch(addProductToFavorite(id));
+   }
+   
 
   return (
    <Wrapper class='product-inner'>
@@ -59,7 +68,7 @@ function ProductMain() {
                <Button className='pro-btn px-4 py-2' onClick={addToCartHandler}>اضافه به سبد
                   <i className='fa fa-plus'></i>
                </Button>
-               <Button className='pro-btn btn-danger px-3 py-2'>افزودن به علاقه مندی
+               <Button className='pro-btn btn-danger px-3 py-2' onClick={addToFavorite}>افزودن به علاقه مندی
                   <i className='fa fa-heart'></i>
                </Button>
             </div>

@@ -8,12 +8,14 @@ import { publicReducer } from './reducer/publicReducer';
 import { productReducer } from './reducer/productReducer';
 import { shopReducer } from './reducer/shopReducer';
 import { cartReducer } from './reducer/cartReducer';
+import { favoriteReducer } from './reducer/favoriteReducer';
 
 const reducer = combineReducers({
    public: publicReducer,
    product: productReducer,
    shop: shopReducer,
-   cart: cartReducer
+   cart: cartReducer,
+   favorites: favoriteReducer
 }) 
 
 const initialState = {

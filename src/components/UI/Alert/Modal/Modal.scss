@@ -1,0 +1,22 @@
+.modal {
+   .modal-header {
+      span {
+         font-size: 15px;
+      }
+      p {
+         font-size: 15px;
+         font-weight: bold;
+      }
+   }
+   .modal-body {
+      p {
+         font-family: 'iranyekan_light';
+      }
+      .btns {
+         margin-top: 1.5rem;
+         button {
+            margin-left: 7px;
+         }
+      }
+   }
+}

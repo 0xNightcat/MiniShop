@@ -1,0 +1,33 @@
+.favorite-product {
+   margin-top: 1rem;
+   .row {
+      .col-md-3 {
+         margin-top: 1.5rem;
+         .card {
+            border: none !important;
+            padding-right: 0;
+            box-shadow: 1px 1px 7px #d3d3d3;
+            border-radius: 12px;
+            transition: 0.2s;
+            &:hover {
+               transform: translateY(-3px);
+            }
+            .card-body {
+               margin-top: 0;
+               .price {
+                  font-size: 15px;
+               }
+            }
+            .btn {
+               margin: 5px 15px 15px 15px;
+               width: 25%;
+               background-color: #fff;
+               color: #0000008a;
+               border-color: #0000008a;
+               border-radius: 7px !important;
+               font-size: 14px !important;
+            }
+         }
+      }
+   }
+}
