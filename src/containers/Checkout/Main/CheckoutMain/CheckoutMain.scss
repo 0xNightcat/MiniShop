@@ -1,0 +1,34 @@
+.checkout-main {
+   .row {
+      .checkout-btns {
+         button {
+            padding: 9px 20px;
+            border-radius: 6px !important;
+         }
+         .btn-pay {
+            margin-left: 6px;
+         }
+      }
+   }
+}
+
+.table {
+   thead {
+      h5 {
+         margin-bottom: 0;
+         margin-right: 2px;
+         padding: 2px 0;
+      }
+   }
+   tbody {
+      tr {
+         td {
+            padding: 15px 5px;
+            font-size: 17px;
+            span {
+               font-weight: bold;
+            }
+         }
+      }
+   }
+}

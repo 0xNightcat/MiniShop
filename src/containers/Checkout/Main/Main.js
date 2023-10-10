@@ -2,6 +2,7 @@ import './Main.scss';
 import Wrapper from '../../../hoc/Wrapper';
 import { Link } from 'react-router-dom';
 import { Container, Breadcrumb } from 'react-bootstrap';
+import CheckoutMain from './CheckoutMain/CheckoutMain';
 
 // checkout main component
 function Main() {
@@ -13,7 +14,7 @@ function Main() {
             <Breadcrumb.Item><Link to='/cart'>سبد خرید</Link></Breadcrumb.Item>
          </Breadcrumb>
 
-         <h2 className='text-center mt-5'>تکمیل سفارش</h2>
+          <CheckoutMain />
       </Container>
     </Wrapper>
   )

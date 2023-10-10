@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function CartTable({ pros, removePro }) {
   return (
-   <Table className='text-center'>
+   <Table className='text-center cart-table'>
       <thead>
          <tr>
             <th>تصویر</th>
