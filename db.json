@@ -3,9 +3,9 @@
     {
       "name": "هدفون مدل Tesco",
       "id": 1,
-      "image": "./src/assets/images/products/1.png",
+      "src": "../images/products/headphon.png",
       "price": 21000,
-      "count": 2,
+      "count": 1,
       "category": "tech",
       "date": 1402.6,
       "sale_count": 7
@@ -13,9 +13,9 @@
     {
       "name": "لپتاپ Asus N552",
       "id": 2,
-      "image": "../../../../../assets/images/products/2.png",
+      "src": "../images/products/asus-n552.png",
       "price": 22000,
-      "count": 2,
+      "count": 1,
       "category": "tech",
       "date": 1402.5,
       "sale_count": 3
@@ -23,9 +23,9 @@
     {
       "name": "کنسول بازی XBOX",
       "id": 3,
-      "image": "../../../../../assets/images/products/3.png",
+      "src": "../images/products/xbox.png",
       "price": 23000,
-      "count": 2,
+      "count": 1,
       "category": "tech",
       "date": 1402.4,
       "sale_count": 2
@@ -33,32 +33,126 @@
     {
       "name": "کفش روزمره Adidas",
       "id": 4,
-      "image": "../../../../../assets/images/products/4.png",
+      "src": "../images/products/sneaker.png",
       "price": 24000,
-      "count": 2,
+      "count": 1,
       "category": "tech",
       "date": 1402.3,
       "sale_count": 5
     },
     {
-      "name": "هدفون مدل Razer",
+      "name": "کنسول بازی Ps4",
       "id": 5,
-      "image": "../../../../../assets/images/products/5.png",
+      "src": "../images/products/ps4.png",
       "price": 25000,
-      "count": 2,
+      "count": 1,
       "category": "tech",
       "date": 1402.2,
       "sale_count": 0
     },
     {
-      "name": "گوشی Apple Iphone 13",
+      "name": "لپتاپ گیمینگ MSI",
       "id": 6,
-      "image": "../../../../../assets/images/products/6.png",
+      "src": "../images/products/gaming-laptop.png",
       "price": 26000,
-      "count": 2,
+      "count": 1,
       "category": "tech",
       "date": 1402.1,
       "sale_count": 6
+    },
+    {
+      "name": "ساعت دیواری old",
+      "id": 7,
+      "src": "../images/products/clock.png",
+      "price": 134000,
+      "count": 1,
+      "category": "tech",
+      "date": 1401.1,
+      "sale_count": 10
+    },
+    {
+      "name": "ساعت Smart Watch",
+      "id": 8,
+      "src": "../images/products/smart-watch.png",
+      "price": 876000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.8,
+      "sale_count": 7
+    }
+  ],
+  "cart_products": [
+    {
+      "name": "لپتاپ Asus N552",
+      "id": 2,
+      "src": "../images/products/asus-n552.png",
+      "price": 22000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.5,
+      "sale_count": 3
+    },
+    {
+      "name": "کنسول بازی XBOX",
+      "id": 3,
+      "src": "../images/products/xbox.png",
+      "price": 23000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.4,
+      "sale_count": 2
+    },
+    {
+      "name": "هدفون مدل Tesco",
+      "id": 1,
+      "src": "../images/products/headphon.png",
+      "price": 21000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.6,
+      "sale_count": 7
+    },
+    {
+      "name": "کفش روزمره Adidas",
+      "id": 4,
+      "src": "../images/products/sneaker.png",
+      "price": 24000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.3,
+      "sale_count": 5
+    }
+  ],
+  "favorite_products": [
+    {
+      "name": "هدفون مدل Tesco",
+      "id": 1,
+      "src": "../images/products/headphon.png",
+      "price": 21000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.6,
+      "sale_count": 7
+    },
+    {
+      "name": "کفش روزمره Adidas",
+      "id": 4,
+      "src": "../images/products/sneaker.png",
+      "price": 24000,
+      "count": 1,
+      "category": "tech",
+      "date": 1402.3,
+      "sale_count": 5
+    },
+    {
+      "name": "ساعت دیواری old",
+      "id": 7,
+      "src": "../images/products/clock.png",
+      "price": 134000,
+      "count": 1,
+      "category": "tech",
+      "date": 1401.1,
+      "sale_count": 10
     }
   ],
   "newsletter_users": [
@@ -69,14 +163,6 @@
     {
       "gmail": "test@gmail.com",
       "id": 2
-    },
-    {
-      "gmail": "test@gmail.com",
-      "id": 3
-    },
-    {
-      "gmail": "test222@gmail.com",
-      "id": 4
     }
   ]
 }
