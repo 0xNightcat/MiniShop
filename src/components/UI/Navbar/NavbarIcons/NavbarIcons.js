@@ -91,10 +91,7 @@ function NavbarIcons() {
         </div>
       </div>
       <div className='favorite item'>
-        <Link to='/favorites'><i className='fa fa-heart'></i></Link>
-      </div>
-      <div className='dark-mode item'>
-         <a href={(event) => preventDefauleAction(event)}><i className='fa fa-circle'></i></a>
+        <Link to='/favorites' title='علاقه مندی‌ها'><i className='fa fa-heart'></i></Link>
       </div>
     </div>
   )
